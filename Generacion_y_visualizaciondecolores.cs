@@ -26,19 +26,31 @@ class Program
 
         for (int i = 0; i < numero1; i++)
         {
-            Console.Write("🤍");
+            colores1.Add("🤍");
         }
-        Console.WriteLine();
-        for (int i = 0; i < numero2; i++)
+       for (int i = 0; i < numero2; i++)
         {
-            Console.Write("💗");
-
+            colores2.Add("💗");
         }
-        Console.WriteLine();
 
         for (int i = 0; i < numero3; i++)
         {
-            Console.Write("🖤");
+            colores3.Add("🖤");
+        }
+        
+        foreach (var c in colores1)
+        {
+            Console.Write(c);
+        }
+        Console.WriteLine();
+        foreach (var v in colores2)
+        {
+            Console.Write(v);
+        }
+        Console.WriteLine();
+        foreach (var m in colores3)
+        {
+            Console.Write(m);
         }
         Console.WriteLine();
     }
